@@ -8,6 +8,10 @@ class BankBudgetsController < ApplicationController
     @bank_budgets = @q.result.order(:fiscal_year).page(params[:page]).per(10)
   end
 
+  def work_show
+    @bank_budgets = BankBudget.where(work_program_group: params[:work_program_group])
+  end
+
   def trend
     @unit_arr2015 = []
     @final_arr2015 = []
