@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Work program group</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Work program group</th>
+      <th>Opera</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bank_budgets.each do |bank_budget| %>
+      <tr>
+        <td><%= bank_budget %></td>
+        <td><%= link_to 'Show '+bank_budget, work_show_bank_budgets_path(work_program_group: bank_budget) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
