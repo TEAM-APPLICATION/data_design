@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bank Budgets</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Work program group</th>
+      <th>Work program</th>
+      <th>Unit</th>
+      <th>Fiscal year</th>
+      <th>Bank budget</th>
+      <th>All funds</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bank_budgets.each do |bank_budget| %>
+      <tr>
+        <td><%= bank_budget.work_program_group %></td>
+        <td><%= bank_budget.work_program %></td>
+        <td><%= bank_budget.unit %></td>
+        <td><%= bank_budget.fiscal_year %></td>
+        <td><%= bank_budget.bank_budget %></td>
+        <td><%= bank_budget.all_funds %></td>
+        <td><%= bank_budget.notes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
