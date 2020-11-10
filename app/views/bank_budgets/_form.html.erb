@@ -1,0 +1,52 @@
+<%= form_with(model: bank_budget, local: true) do |form| %>
+  <% if bank_budget.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bank_budget.errors.count, "error") %> prohibited this bank_budget from being saved:</h2>
+
+      <ul>
+      <% bank_budget.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :work_program_group %>
+    <%= form.text_field :work_program_group %>
+  </div>
+
+  <div class="field">
+    <%= form.label :work_program %>
+    <%= form.text_field :work_program %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unit %>
+    <%= form.text_field :unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fiscal_year %>
+    <%= form.number_field :fiscal_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bank_budget %>
+    <%= form.text_field :bank_budget %>
+  </div>
+
+  <div class="field">
+    <%= form.label :all_funds %>
+    <%= form.text_field :all_funds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
