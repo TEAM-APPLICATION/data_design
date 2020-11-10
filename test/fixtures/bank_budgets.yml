@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work_program_group: MyString
+  work_program: MyString
+  unit: MyString
+  fiscal_year: 1
+  bank_budget: 9.99
+  all_funds: 9.99
+  notes: MyString
+
+two:
+  work_program_group: MyString
+  work_program: MyString
+  unit: MyString
+  fiscal_year: 1
+  bank_budget: 9.99
+  all_funds: 9.99
+  notes: MyString

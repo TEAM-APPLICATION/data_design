@@ -1,0 +1,2 @@
+class BankBudget < ApplicationRecord
+end
