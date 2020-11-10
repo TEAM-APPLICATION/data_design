@@ -1,0 +1,294 @@
+<div class="panel panel-default">
+  <br>
+  <br>
+  <br>
+  <div class="panel-body">
+    <% BankBudget.pluck(:fiscal_year).uniq.sort.each do |b| %>
+      <div id="main<%= b %>" style="width: 100%;height:400px;"></div>
+    <% end %>
+  </div>
+</div>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main2015'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2015'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2015 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2015 %>
+    };
+
+    myChart.setOption(option);
+
+
+    var myChart = echarts.init(document.getElementById('main2016'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2016'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2016 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2016 %>
+    };
+
+    myChart.setOption(option);
+
+    var myChart = echarts.init(document.getElementById('main2017'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2017'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2017 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2017 %>
+    };
+
+    myChart.setOption(option);
+
+    var myChart = echarts.init(document.getElementById('main2018'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2018'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2018 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2018 %>
+    };
+
+    myChart.setOption(option);
+
+    var myChart = echarts.init(document.getElementById('main2019'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2019'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2019 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2019 %>
+    };
+
+    myChart.setOption(option);
+
+    var myChart = echarts.init(document.getElementById('main2020'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2020'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2020 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2020 %>
+    };
+
+    myChart.setOption(option);
+
+    var myChart = echarts.init(document.getElementById('main2021'));
+
+    var option = {
+        title: {
+        text: 'Trend Chart 2021'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Bank Budget (BB) (US$, Millions)', 'All Funds (US$, Millions)']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: <%= raw @unit_arr2021 %>
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: <%= raw @final_arr2021 %>
+    };
+
+    myChart.setOption(option);
+
+</script>
