@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= sort_link(@q, :work_program_group) %></th>
+      <th><%= sort_link(@q, :work_program) %></th>
+      <th><%= sort_link(@q, :unit) %></th>
+      <th><%= sort_link(@q, :fiscal_year) %></th>
+      <th><%= sort_link(@q, :bank_budget) %></th>
+      <th><%= sort_link(@q, :all_funds) %></th>
+      <th><%= sort_link(@q, :notes) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bank_budgets.each do |bank_budget| %>
+      <tr>
+        <td><%= bank_budget.work_program_group %></td>
+        <td><%= bank_budget.work_program %></td>
+        <td><%= bank_budget.unit %></td>
+        <td><%= bank_budget.fiscal_year %></td>
+        <td><%= bank_budget.bank_budget %></td>
+        <td><%= bank_budget.all_funds %></td>
+        <td><%= bank_budget.notes %></td>
+        <td><%= link_to 'Show', bank_budget %></td>
+        <td><%= link_to 'Edit', edit_bank_budget_path(bank_budget) %></td>
+        <td><%= link_to 'Destroy', bank_budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= paginate @bank_budgets %>
+<br>
+<br>

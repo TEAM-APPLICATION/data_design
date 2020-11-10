@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Work program group:</strong>
+  <%= @bank_budget.work_program_group %>
+</p>
+
+<p>
+  <strong>Work program:</strong>
+  <%= @bank_budget.work_program %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @bank_budget.unit %>
+</p>
+
+<p>
+  <strong>Fiscal year:</strong>
+  <%= @bank_budget.fiscal_year %>
+</p>
+
+<p>
+  <strong>Bank budget:</strong>
+  <%= @bank_budget.bank_budget %>
+</p>
+
+<p>
+  <strong>All funds:</strong>
+  <%= @bank_budget.all_funds %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @bank_budget.notes %>
+</p>
+
+<%= link_to 'Edit', edit_bank_budget_path(@bank_budget) %> |
+<%= link_to 'Back', bank_budgets_path %>
